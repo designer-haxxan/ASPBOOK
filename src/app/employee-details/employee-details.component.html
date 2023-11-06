@@ -1,0 +1,20 @@
+<div class="container  mt-3">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped mb-0 center-table">
+        <thead style="background-color: #002d72">
+          <tr>
+            <th>ID</th>
+            <th>Designation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of empservice.listdesignation">
+            <td>{{ emp.id }}</td>
+            <td>{{ emp.designation }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
